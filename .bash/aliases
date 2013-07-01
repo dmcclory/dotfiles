@@ -1,0 +1,2 @@
+alias tbe='BUNDLE_GEMFILE=/home/dan/code/transmog/GEMFILE bundle exec'
+alias tbec='BUNDLE_GEMFILE=/home/dan/code/transmog/GEMFILE bundle exec cucumber -r features/'
