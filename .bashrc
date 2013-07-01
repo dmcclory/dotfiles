@@ -15,3 +15,7 @@ chruby ruby-1.9
 
 # set Rubinius to load 1.9 by default:
 RBXOPT=-X19
+
+# always show full stack trace with GLI
+export GLI_DEBUG=true
+export PS1='$(parse_git_branch)\$ '

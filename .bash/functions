@@ -1,3 +1,14 @@
 function cd {
   builtin cd "$@" && ls -F
 }
+
+# arigato orenstein
+function parse_git_branch {
+  val=`git_branch_name | sed 's_\(.*\)_(\1)_'`
+  echo "$val"
+}
+
+function git_branch_name {
+  val=`git branch 2>/dev/null | grep '^*' | colrm 1 2`
+  echo "$val"
+}
