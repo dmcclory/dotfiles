@@ -1,14 +1,20 @@
+# to make this work:
+# 1. clone the dotfiles repo into your home directory
+# 2. source this file in your $HOME directory
+
+#source $HOME/dotfiles/.bashrc
+
 # copy orenstein's division into separate files
-source ~/.bash/aliases
-source ~/.bash/functions
-source ~/.bash/config
-source ~/.bash/history_config
+source $HOME/dotfiles/.bash/aliases
+source $HOME/dotfiles/.bash/functions
+source $HOME/dotfiles/.bash/config
+source $HOME/dotfiles/.bash/history_config
 
 # I don't use these yet, but may:
 #source ~/.bash/completions
 #source ~/.bash/paths
 
-source ~/.ubuntu_bashrc
+source $HOME/dotfiles/.ubuntu_bashrc
 
 source /usr/local/share/chruby/chruby.sh
 chruby ruby-1.9
