@@ -25,3 +25,8 @@ RBXOPT=-X19
 # always show full stack trace with GLI
 export GLI_DEBUG=true
 export PS1='$(parse_git_branch)\$ '
+
+# set the global git ignore to the dotfiles version
+git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
+
+#kgf
