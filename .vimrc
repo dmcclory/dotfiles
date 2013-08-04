@@ -18,7 +18,7 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 "leader shortcuts
-let mapleader = ","
+let mapleader = " "
 map <leader><leader> <c-^>
 map <leader>bp obinding.pry <Esc>
 map <leader>r :! ruby % <CR>
