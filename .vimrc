@@ -20,7 +20,7 @@ nnoremap <c-l> <c-w>l
 "leader shortcuts
 let mapleader = ","
 map <leader><leader> <c-^>
-map <leader>bp obinding.pry <Esc>
+map <leader>bp orequire 'pry'; binding.pry <Esc>
 map <leader>r :! ruby % <CR>
 map <leader>ts :sp ~/Dropbox/tool-sharpening.txt <CR>
 map <leader>pn :sp ~/Dropbox/project-notes.txt <CR>
