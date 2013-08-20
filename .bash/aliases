@@ -10,3 +10,4 @@ alias lg2="git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(
 alias ll='ls -alF'
 alias tbe='BUNDLE_GEMFILE=/home/dan/code/transmog/Gemfile bundle exec'
 alias tbec='BUNDLE_GEMFILE=/home/dan/code/transmog/Gemfile bundle exec cucumber -r features/'
+alias rakelog='rake cucumber | tee cuke_results && rake log_results'

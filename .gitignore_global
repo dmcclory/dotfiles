@@ -1,2 +1,6 @@
 #vim backup files
 *.swp
+
+#symfony vendored libraries
+/vendor/
+
