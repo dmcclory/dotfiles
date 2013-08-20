@@ -30,3 +30,5 @@ export PS1='$(parse_git_branch)\$ '
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
 #kgf
+
+ln -s dotfiles/.vim
