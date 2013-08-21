@@ -31,4 +31,10 @@ git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
 #kgf
 
-ln -s dotfiles/.vim
+if [ ! -e ~/.vim  ]
+  then ln -s ~dotfiles/.vim
+fi
+
+if [ ! -h ~/.vim ]
+  then echo '.vim directory needs to be symlinked to dotfiles/.vim'
+fi
