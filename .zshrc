@@ -18,7 +18,13 @@ setopt HIST_VERIFY
 
 ## global env & programming language tools ------------------------------------
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+
+## add ASDF to the path - necessary for newer versions of ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+if [ -f "/usr/local/opt/asdsdf/libexec/asdf.sh" ]; then
+. /usr/local/opt/asdsdf/libexec/asdf.sh
+fi
 # added on 8/18/2024 -> trying to get a working GOPATH
 # _trying out _not_ using this: - 6/21/2024
 # it seemed like I could still build things when it was disabled ... fingers crossed
@@ -85,6 +91,10 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 . "/Users/dan/.deno/env"
 
+
+#---------------------------------------------------------
+
+# load local / machine-specific settings
 if [[ -f "$HOME/.zshrc_local" ]]; then
   . "$HOME/.zshrc_local"
 fi
