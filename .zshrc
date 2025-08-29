@@ -84,3 +84,7 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 . "/Users/dan/.deno/env"
+
+if [[ -f "$HOME/.zshrc_local" ]]; then
+  . "$HOME/.zshrc_local"
+fi
