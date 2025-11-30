@@ -1,3 +1,6 @@
+brew "uv"
+
+# original list:
 tap "adoptopenjdk/openjdk"
 tap "arroyosystems/tap"
 tap "babashka/brew"

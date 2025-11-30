@@ -98,3 +98,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 if [[ -f "$HOME/.zshrc_local" ]]; then
   . "$HOME/.zshrc_local"
 fi
+
+# ----------------------------
