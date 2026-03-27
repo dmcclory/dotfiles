@@ -100,3 +100,11 @@ if [[ -f "$HOME/.zshrc_local" ]]; then
 fi
 
 # ----------------------------
+
+export DISABLE_TELEMETRY=1
+
+# to set up a global beads db
+# 1. Install bd
+# 2. mkdir ~/.beads-global && cd ~/.beads-global && bd init --shared-server
+# 3. Add export BEADS_DIR="$HOME/.beads-global/.beads" to ~/.zshrc
+export BEADS_DIR="$HOME/.beads-global/.beads"
