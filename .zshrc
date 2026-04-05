@@ -15,6 +15,13 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_SPACE
 setopt HIST_VERIFY
 
+zshaddhistory() {
+  # Skip multi-line commands or commands over 200 chars
+  local cmd="${1%$'\n'}"
+  [[ $cmd != *$'\n'* && ${#cmd} -lt 200 ]]
+}
+
+
 
 ## global env & programming language tools ------------------------------------
 
